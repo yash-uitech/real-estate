@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Estates | Futuristic Real Estate</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<div id="popup-overlay" class="popup-overlay">
+    <div class="popup-content">
+        <button id="close-popup" class="close-popup" aria-label="Close popup">&times;</button>
+        <h2>Contact Us</h2>
+        <p>Get in touch with our luxury real estate experts</p>
+        <form id="popup-contact-form" class="popup-contact-form" action="https://api.web3forms.com/submit"
+            method="POST">
+            <input type="hidden" name="access_key" value="0eec07d1-911b-4df6-909a-f998e8429aa6">
+            <div class="form-group">
+                <label for="popup-name">Name</label>
+                <input type="text" id="popup-name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="popup-email">Email</label>
+                <input type="email" id="popup-email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="popup-phone">Phone</label>
+                <input type="tel" id="popup-phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="popup-message">Message</label>
+                <textarea id="popup-message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn glow-effect">Send Message</button>
+        </form>
+        <div id="form-status" class="form-status" aria-live="polite"></div>
+    </div>
+</div>
+
+
+<body>
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading Future Estates</div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="container">
+            <div class="logo">Luxury Estates</div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#team">Our Expect team</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div id="particles-js"></div>
+            <div class="hero-content">
+                <h1 class="parallax-title">
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
+                </h1>
+                <p class="parallax-text">Experience the Future of living</p>
+                <a href="#properties" class="btn parallax-btn glow-effect">Explore Our Properties</a>
+            </div>
+            <div id="visit-counter" class="visit-counter">
+                <div class="counter-item">
+                    <i class="fas fa-users"></i>
+                    <span id="overall-visit-count">0</span> total visits
+                </div>
+                <div class="counter-item">
+                    <i class="fas fa-user-clock"></i>
+                    <span id="repeat-visit-count">0</span> your visits
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about parallax-section">
+            <div class="container">
+                <h2 class="section-title">About Luxury Estates</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Luxury Estates is the premier destination for discerning individuals seeking the pinnacle of
+                            futuristic real estate excellence. With over two decades of unparalleled expertise, we
+                            specialize in curating an exclusive portfolio of the world's most extraordinary and
+                            technologically advanced properties.</p>
+                        <p>Our team of elite professionals is dedicated to providing a bespoke experience, ensuring that
+                            each client's unique vision of luxury living becomes a reality. From smart mansions to
+                            eco-friendly penthouses, we offer a meticulously selected array of prestigious properties in
+                            the most coveted locations globally.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80"
+                            alt="Luxury Estate">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats" class="section stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Luxury Properties</div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="25">0</div>
+                        <div class="stat-label">Years of Excellence</div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="1000">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Global Locations</div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="properties" class="section properties">
+            <div class="container">
+                <h2 class="section-title">Featured Properties</h2>
+                <div class="property-grid">
+                    <div class="property-card">
+                        <div class="property-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80');">
+                            <div class="property-overlay">
+                                <a href="index gallery.html" class="view-gallery">View Gallery</a>
+                            </div>
+                        </div>
+                        <div class="property-details">
+                            <h3 class="property-title">Oceanfront Smart Villa</h3>
+                            <p class="property-price">$12,500,000</p>
+                            <div class="property-features">
+                                <span class="property-feature"><i class="fas fa-bed"></i> 6 Bedrooms</span>
+                                <span class="property-feature"><i class="fas fa-bath"></i> 7 Bathrooms</span>
+                                <span class="property-feature"><i class="fas fa-ruler-combined"></i> 10,500 sq ft</span>
+                            </div>
+                            <button class="btn view-info-btn glow-effect">View Info</button>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <div class="property-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80');">
+                            <div class="property-overlay">
+                                <a href="index gallery.html" class="view-gallery">View Gallery</a>
+                            </div>
+                        </div>
+                        <div class="property-details">
+                            <h3 class="property-title">Eco-Friendly Skyline Penthouse</h3>
+                            <p class="property-price">$8,900,000</p>
+                            <div class="property-features">
+                                <span class="property-feature"><i class="fas fa-bed"></i> 4 Bedrooms</span>
+                                <span class="property-feature"><i class="fas fa-bath"></i> 5 Bathrooms</span>
+                                <span class="property-feature"><i class="fas fa-ruler-combined"></i> 6,200 sq ft</span>
+                            </div>
+                            <button class="btn view-info-btn glow-effect">View Info</button>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <div class="property-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+                            <div class="property-overlay">
+                                <a href="index gallery.html" class="view-gallery">View Gallery</a>
+                            </div>
+                        </div>
+                        <div class="property-details">
+                            <h3 class="property-title">AI-Powered Country Estate</h3>
+                            <p class="property-price">$15,500,000</p>
+                            <div class="property-features">
+                                <span class="property-feature"><i class="fas fa-bed"></i> 8 Bedrooms</span>
+                                <span class="property-feature"><i class="fas fa-bath"></i> 10 Bathrooms</span>
+                                <span class="property-feature"><i class="fas fa-ruler-combined"></i> 15,000 sq ft</span>
+                            </div>
+                            <button class="btn view-info-btn glow-effect">View Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="amenities" class="section amenities">
+            <div class="container">
+                <h2 class="section-title">Futuristic Amenities</h2>
+                <div class="amenities-grid">
+                    <div class="amenity-item">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI Concierge</h3>
+                        <p>24/7 AI-powered assistance for all your needs.</p>
+                    </div>
+                    <div class="amenity-item">
+                        <i class="fas fa-solar-panel"></i>
+                        <h3>Sustainable Energy</h3>
+                        <p>Advanced solar and wind power systems for eco-friendly living.</p>
+                    </div>
+                    <div class="amenity-item">
+                        <i class="fas fa-car-battery"></i>
+                        <h3>EV Charging</h3>
+                        <p>Ultra-fast charging stations for electric vehicles.</p>
+                    </div>
+                    <div class="amenity-item">
+                        <i class="fas fa-brain"></i>
+                        <h3>Smart Home System</h3>
+                        <p>Cutting-edge home automation for ultimate convenience.</p>
+                    </div>
+                    <div class="amenity-item">
+                        <i class="fas fa-vr-cardboard"></i>
+                        <h3>VR Entertainment</h3>
+                        <p>Immersive virtual reality rooms for gaming and experiences.</p>
+                    </div>
+                    <div class="amenity-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Biometric Security</h3>
+                        <p>Advanced biometric systems for unparalleled safety.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="team" class="section team">
+            <div class="container">
+                <h2 class="section-title">Our Expert Team</h2>
+                <p class="section-subtitle">Meet the professionals dedicated to finding your perfect luxury property</p>
+                <div class="team-grid">
+                    <div class="agent-card">
+                        <div class="agent-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80');">
+                        </div>
+                        <div class="agent-info">
+                            <h3 class="agent-name">John Doe</h3>
+                            <p class="agent-title">Senior Luxury Property Specialist</p>
+                            <p class="agent-description">With over 15 years of experience in high-end real estate, John
+                                specializes in finding the perfect match for the most discerning clients.</p>
+                            <a href="#contact" class="btn agent-contact glow-effect">Contact John</a>
+                        </div>
+                    </div>
+                    <div class="agent-card">
+                        <div class="agent-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80');">
+                        </div>
+                        <div class="agent-info">
+                            <h3 class="agent-name">Jane Smith</h3>
+                            <p class="agent-title">Eco-Friendly Property Expert</p>
+                            <p class="agent-description">Jane is passionate about sustainable luxury living and helps
+                                clients find properties that combine opulence with environmental responsibility.</p>
+                            <a href="#contact" class="btn agent-contact glow-effect">Contact Jane</a>
+                        </div>
+                    </div>
+                    <div class="agent-card">
+                        <div class="agent-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');">
+                        </div>
+                        <div class="agent-info">
+                            <h3 class="agent-name">Michael Johnson</h3>
+                            <p class="agent-title">Smart Home Technology Specialist</p>
+                            <p class="agent-description">Michael's expertise in cutting-edge home automation makes him
+                                the go-to agent for tech-savvy clients seeking the ultimate in modern living.</p>
+                            <a href="#contact" class="btn agent-contact glow-effect">Contact Michael</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section blog">
+            <div class="container">
+                <h1 class="section-title">Luxury Real Estate Insights</h1>
+                <p class="section-subtitle">Stay informed with the latest trends and expert advice in high-end property investments</p>
+                
+                <div class="blog-grid">
+                    <article class="blog-post">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80" alt="Luxury home with pool" class="blog-image">
+                        <div class="blog-content">
+                            <h2 class="blog-title">The Rise of Smart Homes in Luxury Real Estate</h2>
+                            <p class="blog-meta">By John Doe | May 15, 2023</p>
+                            <p class="blog-excerpt">Explore how cutting-edge technology is transforming high-end properties and enhancing the luxury living experience.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Modern luxury interior" class="blog-image">
+                        <div class="blog-content">
+                            <h2 class="blog-title">Investing in Eco-Friendly Luxury Properties</h2>
+                            <p class="blog-meta">By Jane Smith | June 2, 2023</p>
+                            <p class="blog-excerpt">Discover the growing trend of sustainable luxury real estate and its impact on both the environment and property values.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </article>
+                    <article class="blog-post">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Luxury beachfront property" class="blog-image">
+                        <div class="blog-content">
+                            <h2 class="blog-title">The Allure of Waterfront Luxury Homes</h2>
+                            <p class="blog-meta">By Michael Johnson | June 20, 2023</p>
+                            <p class="blog-excerpt">Uncover the unique appeal and investment potential of luxury properties with stunning water views and access.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Get in touch with our luxury real estate experts</p>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Visit Us</h3>
+                        <p>123 Future Lane, Neo City, FC 90210</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Call Us</h3>
+                        <p>(800) 123-4567</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Us</h3>
+                        <p>info@luxuryestates.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Office Hours</h3>
+                        <p>Monday - Friday: 9AM - 6PM</p>
+                        <p>Saturday: 10AM - 4PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="0eec07d1-911b-4df6-909a-f998e8429aa6">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="property">Property Information</option>
+                                <option value="viewing">Schedule a Viewing</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn glow-effect">Send Message</button>
+                    </form>
+                    <div id="form-status" class="form-status" aria-live="polite"></div>
+                </div>
+            </div>
+            <div id="map" class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4506.195428486217!2d77.42705221195578!3d28.606028475577666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef6165728471%3A0xf027989e066991a4!2sGaur%20City%20Mall!5e1!3m2!1sen!2sin!4v1731301584814!5m2!1sen!2sin"
+                    width="1200" height="450" style="border-radius:10px ;border: 0; " allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luxury Estates</h3>
+                    <p>Elevating the art of future living through exceptional properties and unparalleled service.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Future Lane, Neo City, FC 90210</p>
+                    <p><i class="fas fa-phone"></i> (800) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@luxuryestates.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest luxury property updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="glow-effect"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="theme-switch-wrapper" style="margin: 5px;">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+                <em>Switch Theme</em>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Luxury Estates. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-to-top" class="scroll-to-top glow-effect">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <a href="https://wa.me/1234567890" class="whatsapp-btn glow-effect" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+        <span class="notification-dot"></span>
+    </a>
+
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
